@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class updateBid : DbMigration
+    public partial class addPhoto : DbMigration
     {
         public override void Up()
         {
-            AlterColumn("dbo.Bids", "BidAmount", c => c.Single(nullable: false));
+            AddColumn("dbo.Cars", "photo", c => c.Binary());
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.Bids", "BidAmount", c => c.Int(nullable: false));
+            DropColumn("dbo.Cars", "photo");
         }
     }
 }

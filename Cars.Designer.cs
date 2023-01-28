@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnNew = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.lblBalance = new System.Windows.Forms.Label();
             this.Bid = new System.Windows.Forms.GroupBox();
             this.btnYourCars = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Bid.SuspendLayout();
             this.SuspendLayout();
@@ -148,6 +150,12 @@
             this.btnYourCars.UseVisualStyleBackColor = true;
             this.btnYourCars.Click += new System.EventHandler(this.btnYourCars_Click);
             // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // Cars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,5 +192,6 @@
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.GroupBox Bid;
         private System.Windows.Forms.Button btnYourCars;
+        private System.Windows.Forms.Timer timer;
     }
 }

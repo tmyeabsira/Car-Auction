@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,11 +26,12 @@ namespace Car_Auction
             u.Email = txtEmail.Text;
             u.userName = txtUserName.Text;
             u.userPassword = txtPassword.Text;
-            u.balance = float.Parse(txtBalance.Text);
+            u.balance = decimal.Parse(txtBalance.Text);
             var user = new AuctionDBContext();
             user.Users.Add(u);
             user.SaveChanges();
             MessageBox.Show("Successfully added");
+            this.Close();
             //u.saveUser();
         }
     }

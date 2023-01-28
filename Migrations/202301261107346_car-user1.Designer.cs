@@ -7,13 +7,13 @@ namespace Car_Auction.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addUser1 : IMigrationMetadata
+    public sealed partial class caruser1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addUser1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(caruser1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202212311009538_addUser1"; }
+            get { return "202301261107346_car-user1"; }
         }
         
         string IMigrationMetadata.Source

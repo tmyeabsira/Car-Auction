@@ -38,6 +38,9 @@
             this.txtNoOfSeats = new System.Windows.Forms.TextBox();
             this.txtStartBid = new System.Windows.Forms.TextBox();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.carPic = new System.Windows.Forms.PictureBox();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.carPic)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -123,11 +126,31 @@
             this.lblUserName.TabIndex = 9;
             this.lblUserName.Text = "user";
             // 
+            // carPic
+            // 
+            this.carPic.Location = new System.Drawing.Point(629, 85);
+            this.carPic.Name = "carPic";
+            this.carPic.Size = new System.Drawing.Size(122, 138);
+            this.carPic.TabIndex = 10;
+            this.carPic.TabStop = false;
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Location = new System.Drawing.Point(648, 252);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowse.TabIndex = 11;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
             // NewCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBrowse);
+            this.Controls.Add(this.carPic);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.txtStartBid);
             this.Controls.Add(this.txtNoOfSeats);
@@ -140,6 +163,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "NewCar";
             this.Text = "NewCar";
+            ((System.ComponentModel.ISupportInitialize)(this.carPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +181,7 @@
         private System.Windows.Forms.TextBox txtNoOfSeats;
         private System.Windows.Forms.TextBox txtStartBid;
         private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.PictureBox carPic;
+        private System.Windows.Forms.Button btnBrowse;
     }
 }

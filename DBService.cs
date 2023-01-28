@@ -11,7 +11,7 @@ namespace Car_Auction
 {
     internal class DBService
     {
-        string constr = "server=.;database=CarAuction1;integrated security = true";
+        string constr = "server=.;database=CarAuction2;integrated security = true";
         SqlConnection con;
         public void login(User u)
         {
@@ -100,7 +100,7 @@ namespace Car_Auction
                     com.Parameters.AddWithValue("@model", c.carModel);
                     com.Parameters.AddWithValue("@noOfSeats", c.noOfSeats);
                     com.Parameters.AddWithValue("@startBid", c.startBid);
-                    com.Parameters.AddWithValue("@carOwner", c.carOwner);
+                    com.Parameters.AddWithValue("@carOwner", c.startBid);
 
                     int rows = com.ExecuteNonQuery();
                     if (rows > 0)

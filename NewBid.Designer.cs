@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAddBid = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCarName = new System.Windows.Forms.Label();
             this.lblCarModel = new System.Windows.Forms.Label();
             this.lblCarNoOfSeat = new System.Windows.Forms.Label();
@@ -45,7 +44,9 @@
             this.lblBid = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.lblBalance = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblId = new System.Windows.Forms.Label();
+            this.carPic = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.carPic)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddBid
@@ -57,14 +58,6 @@
             this.btnAddBid.Text = "Add Bid";
             this.btnAddBid.UseVisualStyleBackColor = true;
             this.btnAddBid.Click += new System.EventHandler(this.btnAddBid_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(613, 146);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 124);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // lblCarName
             // 
@@ -199,11 +192,30 @@
             this.lblBalance.TabIndex = 16;
             this.lblBalance.Text = "label2";
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(45, 369);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(35, 13);
+            this.lblId.TabIndex = 17;
+            this.lblId.Text = "label2";
+            // 
+            // carPic
+            // 
+            this.carPic.Location = new System.Drawing.Point(578, 133);
+            this.carPic.Name = "carPic";
+            this.carPic.Size = new System.Drawing.Size(140, 125);
+            this.carPic.TabIndex = 18;
+            this.carPic.TabStop = false;
+            // 
             // NewBid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.carPic);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.lblBid);
@@ -218,11 +230,10 @@
             this.Controls.Add(this.lblCarNoOfSeat);
             this.Controls.Add(this.lblCarModel);
             this.Controls.Add(this.lblCarName);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAddBid);
             this.Name = "NewBid";
             this.Text = "Bid";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,7 +242,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAddBid;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblCarModel;
         private System.Windows.Forms.Label lblCarNoOfSeat;
         private System.Windows.Forms.Label lblCarOwner;
@@ -247,5 +257,7 @@
         private System.Windows.Forms.Label lblBid;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblBalance;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.PictureBox carPic;
     }
 }

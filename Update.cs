@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,7 +32,7 @@ namespace Car_Auction
             var c = context.Cars.Where(a => a.carId == 12).FirstOrDefault();
             c.carModel = int.Parse(txtModel.Text);
             c.noOfSeats = int.Parse(txtNumberOfSeats.Text);
-            c.startBid = float.Parse(txtStartBid.Text);
+            c.startBid = decimal.Parse(txtStartBid.Text);
             context.SaveChanges();
         }
     }

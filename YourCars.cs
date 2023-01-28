@@ -18,7 +18,7 @@ namespace Car_Auction
             InitializeComponent();
             var query = from g in context.Cars
                         where g.carOwner.Equals(u.userName)
-                        select g;
+                        select new { g.carId, g.carName, g.carModel, g.noOfSeats };
             dgvYourCars.DataSource = query.ToList();
         }
 

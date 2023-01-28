@@ -64,29 +64,25 @@
     </Compile>
     <Compile Include="AuctionDBContext.cs" />
     <Compile Include="Bid.cs" />
-    <Compile Include="Migrations\202212311002543_addUser.cs" />
-    <Compile Include="Migrations\202212311002543_addUser.designer.cs">
-      <DependentUpon>202212311002543_addUser.cs</DependentUpon>
+    <Compile Include="Migrations\202301260914479_CreateNew.cs" />
+    <Compile Include="Migrations\202301260914479_CreateNew.designer.cs">
+      <DependentUpon>202301260914479_CreateNew.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202212311009538_addUser1.cs" />
-    <Compile Include="Migrations\202212311009538_addUser1.designer.cs">
-      <DependentUpon>202212311009538_addUser1.cs</DependentUpon>
+    <Compile Include="Migrations\202301261006168_car-user.cs" />
+    <Compile Include="Migrations\202301261006168_car-user.designer.cs">
+      <DependentUpon>202301261006168_car-user.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202301031132279_addBid.cs" />
-    <Compile Include="Migrations\202301031132279_addBid.designer.cs">
-      <DependentUpon>202301031132279_addBid.cs</DependentUpon>
+    <Compile Include="Migrations\202301261107346_car-user1.cs" />
+    <Compile Include="Migrations\202301261107346_car-user1.designer.cs">
+      <DependentUpon>202301261107346_car-user1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202301040722174_addTime.cs" />
-    <Compile Include="Migrations\202301040722174_addTime.designer.cs">
-      <DependentUpon>202301040722174_addTime.cs</DependentUpon>
+    <Compile Include="Migrations\202301280822598_simple.cs" />
+    <Compile Include="Migrations\202301280822598_simple.designer.cs">
+      <DependentUpon>202301280822598_simple.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202301130656473_updateBid.cs" />
-    <Compile Include="Migrations\202301130656473_updateBid.designer.cs">
-      <DependentUpon>202301130656473_updateBid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301140758430_updateType.cs" />
-    <Compile Include="Migrations\202301140758430_updateType.designer.cs">
-      <DependentUpon>202301140758430_updateType.cs</DependentUpon>
+    <Compile Include="Migrations\202301281255340_addPhoto.cs" />
+    <Compile Include="Migrations\202301281255340_addPhoto.designer.cs">
+      <DependentUpon>202301281255340_addPhoto.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NewBid.cs">
@@ -139,23 +135,20 @@
     <EmbeddedResource Include="AllBids.resx">
       <DependentUpon>AllBids.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202212311002543_addUser.resx">
-      <DependentUpon>202212311002543_addUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301260914479_CreateNew.resx">
+      <DependentUpon>202301260914479_CreateNew.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202212311009538_addUser1.resx">
-      <DependentUpon>202212311009538_addUser1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301261006168_car-user.resx">
+      <DependentUpon>202301261006168_car-user.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301031132279_addBid.resx">
-      <DependentUpon>202301031132279_addBid.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301261107346_car-user1.resx">
+      <DependentUpon>202301261107346_car-user1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301040722174_addTime.resx">
-      <DependentUpon>202301040722174_addTime.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301280822598_simple.resx">
+      <DependentUpon>202301280822598_simple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301130656473_updateBid.resx">
-      <DependentUpon>202301130656473_updateBid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301140758430_updateType.resx">
-      <DependentUpon>202301140758430_updateType.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301281255340_addPhoto.resx">
+      <DependentUpon>202301281255340_addPhoto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewBid.resx">
       <DependentUpon>NewBid.cs</DependentUpon>

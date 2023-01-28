@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,26 +46,29 @@ namespace Car_Auction
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            int c = context.Bids.Count()+7;
-            Console.WriteLine(c);
-            //for(int i = 7; i < c; i++)
+            //int c = context.Bids.Count()+7;
+            //Console.WriteLine(c);
+            //Bid b = context.Bids.Single(a => a.BidId == 1016);
+            //try
             //{
-                Bid b = context.Bids.Single(a => a.BidId == 17);
-                if (Convert.ToInt32(DateTime.Now.Subtract(b.BidTime).TotalMinutes) >= 3)
-                {
-                    timer.Stop();
-                    MessageBox.Show(b.Car + "has been sold for " + b.Bidder + " for " + b.BidAmount + "Birr! Congratulations " + b.Bidder);
-                    Car car = context.Cars.Single(a => a.carOwner == b.OwnerName && a.carName == b.Car);
-                    User owner = context.Users.Single(a => a.userName == b.OwnerName);
-                    User bidder = context.Users.Single(a => a.userName == b.Bidder);
-                    owner.balance += b.BidAmount;
-                    bidder.balance -= b.BidAmount;
-                    context.Bids.Remove(b);
-                    context.Cars.Remove(car);
-                    context.SaveChanges();
-                    
-                //}
-            }
+            //    if (Convert.ToInt32(DateTime.Now.Subtract(b.BidTime).TotalMinutes) >= 3)
+            //    {
+            //        timer.Stop();
+            //        MessageBox.Show(b.Car + "has been sold for " + b.Bidder + " for " + b.BidAmount + "Birr! Congratulations " + b.Bidder);
+            //        Car car = context.Cars.Single(a => a.carOwner.ToString().Equals(b.OwnerName) && a.carName.Equals(b.Car));
+            //        User owner = context.Users.Single(a => a.userName.Equals(b.OwnerName.ToString()));
+            //        User bidder = context.Users.Single(a => a.userName.Equals(b.Bidder.ToString()));
+            //        owner.balance += b.BidAmount;
+            //        bidder.balance -= b.BidAmount;
+            //        context.Bids.Remove(b);
+            //        context.Cars.Remove(car);
+            //        context.SaveChanges();
+            //    }
+            //}
+            //catch(Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //}
         }
     }
 }
